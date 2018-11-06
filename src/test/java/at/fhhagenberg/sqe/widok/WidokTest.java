@@ -2,9 +2,9 @@ package at.fhhagenberg.sqe.widok;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,13 +18,13 @@ public class WidokTest {
 
 	private WebDriver driver;
 
-	@BeforeEach
+	@Before
 	public void createDriver() throws Exception {
 		WebDriverManager.getInstance(driverClass).setup();
 		driver = driverClass.getDeclaredConstructor().newInstance();
 	}
 
-	@AfterEach
+	@After
 	public void quitDriver() {
 		driver.quit();
 	}
