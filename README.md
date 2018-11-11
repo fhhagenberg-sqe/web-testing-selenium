@@ -67,7 +67,7 @@ The goal of this exercise is to learn how to write a simple system test for a we
 When you're done...
 
 - [x] push your changes to your upstream repository on GitHub.
-- [x] on GitHub, [create a release][GitHub creating releases] with version `v1.0`.
+- [x] on GitHub, [create a release][GitHub creating releases] with version `v2.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
 
 ## (3) Page Objects _(2 Points)_
@@ -98,7 +98,7 @@ Note:
 When you're done...
 
 - [x] push your changes to your upstream repository on GitHub.
-- [x] on GitHub, [create a release][GitHub creating releases] with version `v1.0`.
+- [x] on GitHub, [create a release][GitHub creating releases] with version `v3.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
 
 ## (4) Data-driven Tests _(2 Points)_
@@ -130,7 +130,7 @@ Please, write your test case according to following instructions:
 When you're done...
 
 - [x] push your changes to your upstream repository on GitHub.
-- [x] on GitHub, [create a release][GitHub creating releases] with version `v1.0`.
+- [x] on GitHub, [create a release][GitHub creating releases] with version `v4.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
 
 [GitHub creating releases]: https://help.github.com/articles/creating-releases/
