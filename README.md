@@ -36,7 +36,14 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v1.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
+- [x] please assess this exercise:
 
+  | Category                                |       |
+  | :-------------------------------------- | :---: |
+  | Time expenses for this exercise         | hh:mm |
+  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
+  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
+  
 ## (2) JUnit Test using Selenium WebDriver _(2 Points)_
 
 The goal of this exercise is to learn how to write a simple system test for a web application as JUnit test cases in Java using the Selenium WebDriver. The test cases we implement are those of the previous exercise.
@@ -69,7 +76,14 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v2.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
+- [x] please assess this exercise:
 
+  | Category                                |       |
+  | :-------------------------------------- | :---: |
+  | Time expenses for this exercise         | hh:mm |
+  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
+  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
+  
 ## (3) Page Objects _(2 Points)_
 
 In this exercise you learn how to extend automated testing of (Web-based) GUIs to increase the maintainability and flexibility of your test implementation.
@@ -100,7 +114,14 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v3.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
+- [x] please assess this exercise:
 
+  | Category                                |       |
+  | :-------------------------------------- | :---: |
+  | Time expenses for this exercise         | hh:mm |
+  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
+  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
+  
 ## (4) Data-driven Tests _(2 Points)_
 
 The implemented test cases contain test code and test data. In this exercise you learn how to to increase the flexibility and maintainability of the tests by separating test data from test code.
@@ -132,7 +153,14 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v4.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
+- [x] please assess this exercise:
 
+  | Category                                |       |
+  | :-------------------------------------- | :---: |
+  | Time expenses for this exercise         | hh:mm |
+  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
+  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
+  
 [GitHub creating releases]: https://help.github.com/articles/creating-releases/
 [GitHub linking to releases]: https://help.github.com/articles/linking-to-releases/
 [Selenium IDE]: https://www.seleniumhq.org/docs/02_selenium_ide.jsp
