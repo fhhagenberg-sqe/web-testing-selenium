@@ -15,19 +15,25 @@ In this exercise you learn the basics of automated web testing via record and re
 1. Install Selenium IDE as extension to your browser (install either [Selenium IDE for Firefox][] or [Selenium IDE for Chrome][]).
 1. Load the Selenium IDE project [`src/side/Widok Test.side`](src/side/Widok%20Test.side) into your Selenium IDE.
 
-   This project contains two test cases that perform checks on the _University of Applied Science's Research Documentation web page_ ("Widok") located at http://research.fh-ooe.at.
+   This project contains a test case that perform checks on the _University of Applied Science's Research Documentation web page_ ("Widok") located at http://research.fh-ooe.at.
 
-1. Add **two** additional test cases
-   1. Create a test case that test - similar to `WidokGermanTest` - the english translation of the search page. Name it `WidokEnglishTest`.
+1. Add **two** additional test cases by using the 'record' function of Selenium IDE:
+   1. The first test case tests - similar to `WidokGermanTest` - the english translation of the search page. Name it `WidokEnglishTest`.
       _(Hint: Click on the small Union Jack in the top right corner of the page to get the english version.)_
-         
-   1. Create a test case that performs a search and tests if the first research unit found is linked to the correct details page of this research unit (e.g. the heading of the details page is correct). Name this test `WidokSearchResultTest`.
-   
-   You can either record this test or create it manually in the command editor of the Selenium IDE.
-   
-   In case of recording, make sure to clean up the test cases afterwards to get rid of unwanted commands that may have been recorded accidentially.
+
+   1. The second test case performs a search for the keyword 'testing' and checks the number of publications found as well as the link-text of the first publication in the list. Name this test `WidokSearchTest`.
+
+      :exclamation: What problems do you encounter when running the recorded test? (See warning message in the logs)
+      Fix them by manually modifying the recorded commands.
 
 1. Run all tests and make sure they complete sucessfully.
+
+1. :floppy_disk: Save the Selenium IDE project. Overwrite the existing file [`src/side/Widok Test.side`](src/side/Widok%20Test.side).
+
+Some hints:
+* To add a new test, click the "+" symbol in the 'Tests' view of the IDE.
+* To start recording, click the red "rec" button at the very right of the IDE.
+* Make sure to clean up the test cases after recording to get rid of unwanted commands that may have been recorded accidentially.
 
 ### Submission
 
@@ -43,7 +49,7 @@ When you're done...
   | Time expenses for this exercise         | hh:mm |
   | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
   | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
-  
+
 ## (2) JUnit Test using Selenium WebDriver _(2 Points)_
 
 The goal of this exercise is to learn how to write a simple system test for a web application as JUnit test cases in Java using the Selenium WebDriver. The test cases we implement are those of the previous exercise.
@@ -59,14 +65,13 @@ The goal of this exercise is to learn how to write a simple system test for a we
 1. This git repository is a [Maven Project][]. Import it into/Open it in your favourite IDE (e.g. Eclipse, IntelliJ).
 
    The required libraries _Unit_, _Selenium WebDriver_ (and two more) are already set up as Maven dependencies. So you do not have to download or install anything, your IDE will locate and download them for you.
-   If you prefer to **not** use an IDE, you can use the Maven command line tool _mvn_ to compile and package your classes and execute your tests. 
-   
+   If you prefer to **not** use an IDE, you can use the Maven command line tool _mvn_ to compile and package your classes and execute your tests.
+
 1. Take the existing class [`at.fhhagenberg.sqe.widok.WidokTest`](src/test/java/at/fhhagenberg/sqe/widok/WidokTest.java) as starting point to write a system test with JUnit and Selenium WebDriver. Implement all of the _four tests of the previous exercise (1)_:
 
    1. `testWidokGerman`: Ensure, the default search page is correctly translated to german.
    1. `testWidokEnglish`: Ensure, the english search page is correctly translated to english.
-   1. `testWidokSearch`: Search for 'test' and check if the first publication has the title _"Testen von Web-Anwendungen"_;
-   1. `testWidokSearchResult`: Perform a search and test if the first research unit found is linked to the correct details page of this research unit.
+   1. `testWidokSearch`: Search for 'testing' and check the number of publications and if the first publication has the title _"Testen von Web-Anwendungen"_;
 
 1. Run all your tests and make sure they complete successfully.
 
@@ -83,7 +88,7 @@ When you're done...
   | Time expenses for this exercise         | hh:mm |
   | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
   | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
-  
+
 ## (3) Page Objects _(2 Points)_
 
 In this exercise you learn how to extend automated testing of (Web-based) GUIs to increase the maintainability and flexibility of your test implementation.
@@ -103,7 +108,7 @@ Read the blog entry [Page Objects in Selenium][] about the use of the 'Page Obje
 The test cases should be independent from finding elements, clicks, key strokes, etc. operating on specific elements of a Web page. These operations and specific elements should be moved to Page Object classes `SearchPage`, `ResultsPage`, etc. Put these classes into a separate package (e.g. `at.fhhagenberg.sqe.widok.pages`).
 
 Note:
-* Follow the examples provided at [Page Objects in Selenium] and [SeleniumHQ Wiki about PageObjects][SeleniumHQ Wiki PageObjects]. 
+* Follow the examples provided at [Page Objects in Selenium] and [SeleniumHQ Wiki about PageObjects][SeleniumHQ Wiki PageObjects].
 * Use the class `PageFactory` provided by Selenium to abbreviate the code in the Page Object classes. For further information see the aforementioned blog as well as the [Wiki documentation about PageFactories][SeleniumHQ Wiki PageFactory].
 * Run your JUnit test cases – make sure they still pass.
 
@@ -121,7 +126,7 @@ When you're done...
   | Time expenses for this exercise         | hh:mm |
   | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
   | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
-  
+
 ## (4) Data-driven Tests _(2 Points)_
 
 The implemented test cases contain test code and test data. In this exercise you learn how to to increase the flexibility and maintainability of the tests by separating test data from test code.
@@ -160,7 +165,7 @@ When you're done...
   | Time expenses for this exercise         | hh:mm |
   | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
   | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
-  
+
 [GitHub creating releases]: https://help.github.com/articles/creating-releases/
 [GitHub linking to releases]: https://help.github.com/articles/linking-to-releases/
 [Selenium IDE]: https://www.seleniumhq.org/docs/02_selenium_ide.jsp
