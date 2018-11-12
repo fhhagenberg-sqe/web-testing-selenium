@@ -30,23 +30,16 @@ public class WidokTest {
 	}
 
 	@Test
-	public void testSearchForPublication() {
+	public void testSearch() {
 		driver.get("http://research.fh-ooe.at/");
 
 		WebElement searchForm = driver.findElement(By.id("searchForm"));
-		{
-			WebElement searchBox = searchForm.findElement(By.id("searchedFor"));
-			searchBox.sendKeys("testing");
+		WebElement searchBox = searchForm.findElement(By.id("searchedFor"));
+		searchBox.sendKeys("testing");
 
-			WebElement searchButton = searchForm.findElement(By.name("search"));
-			searchButton.click();
+		WebElement searchButton = searchForm.findElement(By.name("search"));
+		searchButton.click();
 
-			assertEquals("Widok | Suche", driver.getTitle());
-		}
-
-		driver.findElement(By.partialLinkText("Publikationen")).click();
-
-		assertEquals("Testing of Web Applications",
-				driver.findElement(By.cssSelector("a[href*='publication/377']")).getText());
+		assertEquals("Widok | Suche", driver.getTitle());
 	}
 }
