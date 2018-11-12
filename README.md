@@ -23,7 +23,7 @@ In this exercise you learn the basics of automated web testing via record and re
 
    1. The second test case performs a search for the keyword 'testing' and checks the number of publications found as well as the link-text of the first publication in the list. Name this test `WidokSearchTest`.
 
-      :exclamation: What problems do you encounter when running the recorded test? (See warning message in the logs)
+      :interrobang: What problems do you encounter when running the recorded test? (See warning message in the logs)
       Fix them by manually modifying the recorded commands.
 
 1. Run all tests and make sure they complete sucessfully.
@@ -42,7 +42,7 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v1.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise:
+- [x] please assess this exercise (fill out the table):
 
   | Category                                |       |
   | :-------------------------------------- | :---: |
@@ -81,7 +81,7 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v2.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise:
+- [x] please assess this exercise (fill out the table):
 
   | Category                                |       |
   | :-------------------------------------- | :---: |
@@ -119,7 +119,7 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v3.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise:
+- [x] please assess this exercise (fill out the table):
 
   | Category                                |       |
   | :-------------------------------------- | :---: |
@@ -158,7 +158,7 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v4.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise:
+- [x] please assess this exercise (fill out the table):
 
   | Category                                |       |
   | :-------------------------------------- | :---: |
