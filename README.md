@@ -89,7 +89,7 @@ When you're done...
   | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
   | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
 
-## (3) Page Objects _(3 Points)_
+## (3) Page Objects _(2 Points)_
 
 In this exercise you learn how to extend automated testing of (Web-based) GUIs to increase the maintainability and flexibility of your test implementation.
 
