@@ -2,9 +2,9 @@
 
 In this assignment you learn how to build a maintainable test framework for testing web applications using JUnit and the [Selenium WebDriver][SeleniumHQ WebDriver]. Starting with a simple Selenium based test you will gradually improve the code to get a test system with abstraction layer, reusable functions and a separate test data pool.
 
-## (1) Automated Web Testing using Selenium IDE _(1 Point)_
+## (1) Capture & Replay with Selenium IDE _(1 Point)_
 
-In this exercise you learn the basics of automated web testing via record and replay. We use [Selenium IDE][] for this.
+In this exercise you learn the basics of automated web testing via capture and replay. We use [Selenium IDE][] for this.
 
 ### Prerequisites
 
@@ -89,7 +89,7 @@ When you're done...
   | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
   | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
 
-## (3) Page Objects _(2 Points)_
+## (3) Page Objects _(3 Points)_
 
 In this exercise you learn how to extend automated testing of (Web-based) GUIs to increase the maintainability and flexibility of your test implementation.
 
