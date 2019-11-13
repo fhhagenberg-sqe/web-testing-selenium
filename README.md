@@ -13,13 +13,13 @@ In this exercise you learn the basics of automated web testing via capture and r
 ### Instructions
 
 1. Install Selenium IDE as extension to your browser (install either [Selenium IDE for Firefox][] or [Selenium IDE for Chrome][]).
-1. Load the Selenium IDE project [`src/side/Widok Test.side`](src/side/Widok%20Test.side) into your Selenium IDE.
+1. Load the Selenium IDE project [`src/side/FHResearchTest.side`](src/side/FHResearchTest.side) into your Selenium IDE.
 
-   This project contains a test case that perform checks on the _University of Applied Science's Research Documentation web page_ ("Widok") located at http://research.fh-ooe.at.
+   This project contains a test case that perform checks on the _University of Applied Science's Research Documentation web page_ located at http://research.fh-ooe.at.
 
 1. Add **two** additional test cases by using the 'record' function of Selenium IDE:
-   1. The first test case tests - similar to `WidokGermanTest` - the english translation of the search page. Name it `WidokEnglishTest`.
-      _(Hint: Click on the small Union Jack in the top right corner of the page to get the english version.)_
+   1. The first test case tests - similar to `ResearchGermanTest` - the english translation of the search page. Name it `ResearchEnglishTest`.
+      _(Hint: The english version is available via https://research.fh-ooe.at/en/index.)_
 
    1. The second test case performs a search for the keyword 'testing' and checks the number of publications found as well as the link-text of the first publication in the list. Name this test `WidokSearchTest`.
 
@@ -28,7 +28,7 @@ In this exercise you learn the basics of automated web testing via capture and r
 
 1. Run all tests and make sure they complete sucessfully.
 
-1. :floppy_disk: Save the Selenium IDE project. Overwrite the existing file [`src/side/Widok Test.side`](src/side/Widok%20Test.side).
+1. :floppy_disk: Save the Selenium IDE project. Overwrite the existing file [`src/side/FHResearchTest.side`](src/side/FHResearchTest.side).
 
 Some hints:
 * To add a new test, click the "+" symbol in the 'Tests' view of the IDE.
@@ -42,13 +42,6 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v1.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise (fill out the table):
-
-  | Category                                |       |
-  | :-------------------------------------- | :---: |
-  | Time expenses for this exercise         | hh:mm |
-  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
-  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
 
 ## (2) JUnit Test using Selenium WebDriver _(2 Points)_
 
@@ -57,7 +50,7 @@ The goal of this exercise is to learn how to write a simple system test for a we
 ### Prerequisites
 
 - [x] Completion of the previous exercise (1).
-- [x] Java 10 SDK. (Works also with other versions, but this requires slight modifications of [`pom.xml`](pom.xml).)
+- [x] Java 13 SDK. (Works also with other versions, but this might require slight modifications of [`pom.xml`](pom.xml).)
 - [x] Maven 3. (If you use an IDE like Eclipse or IntelliJ, Maven is **already included** :sunglasses:.)
 
 ### Instructions
@@ -67,11 +60,11 @@ The goal of this exercise is to learn how to write a simple system test for a we
    The required libraries _Unit_, _Selenium WebDriver_ (and two more) are already set up as Maven dependencies. So you do not have to download or install anything, your IDE will locate and download them for you.
    If you prefer to **not** use an IDE, you can use the Maven command line tool _mvn_ to compile and package your classes and execute your tests.
 
-1. Take the existing class [`at.fhhagenberg.sqe.widok.WidokTest`](src/test/java/at/fhhagenberg/sqe/widok/WidokTest.java) as starting point to write a system test with JUnit and Selenium WebDriver. Implement all of the _four tests of the previous exercise (1)_:
+1. Take the existing class [`at.fhhagenberg.sqe.fhresearch.FHResearchTest`](src/test/java/at/fhhagenberg/sqe/fhresearch/FHResearchTest.java) as starting point to write a system test with JUnit and Selenium WebDriver. Implement all of the _four tests of the previous exercise (1)_:
 
-   1. `testWidokGerman`: Ensure, the default search page is correctly translated to german.
-   1. `testWidokEnglish`: Ensure, the english search page is correctly translated to english.
-   1. `testWidokSearch`: Search for 'testing' and check the number of publications and if the first publication has the title _"Testen von Web-Anwendungen"_;
+   1. `testResearchGerman`: Ensure, the default search page is correctly translated to german.
+   1. `testResearchEnglish`: Ensure, the english search page is correctly translated to english.
+   1. `testResearchSearch`: Search for 'testing' and check the number of publications and if the first publication has the title _"Testen von Web-Anwendungen"_;
 
 1. Run all your tests and make sure they complete successfully.
 
@@ -81,13 +74,6 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v2.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise (fill out the table):
-
-  | Category                                |       |
-  | :-------------------------------------- | :---: |
-  | Time expenses for this exercise         | hh:mm |
-  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
-  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
 
 ## (3) Page Objects _(2 Points)_
 
@@ -98,14 +84,14 @@ The test code written in the previous example has no abstractions and is therefo
 ### Prerequisites
 
 - [x] Completion of the previous exercise (2).
-- [x] Java 10 SDK. (Works also with other versions, but this requires slight modifications of [`pom.xml`](pom.xml).)
+- [x] Java 13 SDK. (Works also with other versions, but this might require slight modifications of [`pom.xml`](pom.xml).)
 - [x] Maven 3. (If you use an IDE like Eclipse or IntelliJ, Maven is **already included** :sunglasses:.)
 
 ### Instructions
 
-Read the blog entry [Page Objects in Selenium][] about the use of the 'Page Objects' test pattern and refactor the test scripts from the previous exercise into `WidocPageObjectsTest.java`.
+Read the blog entry [Page Objects in Selenium][] about the use of the 'Page Objects' test pattern and refactor the test scripts from the previous exercise into `FHResearchPageObjectsTest.java`.
 
-The test cases should be independent from finding elements, clicks, key strokes, etc. operating on specific elements of a Web page. These operations and specific elements should be moved to Page Object classes `SearchPage`, `ResultsPage`, etc. Put these classes into a separate package (e.g. `at.fhhagenberg.sqe.widok.pages`).
+The test cases should be independent from finding elements, clicks, key strokes, etc. operating on specific elements of a Web page. These operations and specific elements should be moved to Page Object classes `SearchPage`, `ResultsPage`, etc. Put these classes into a separate package (e.g. `at.fhhagenberg.sqe.fhresearch.pages`).
 
 Note:
 * Follow the examples provided at [Page Objects in Selenium] and [SeleniumHQ Wiki about PageObjects][SeleniumHQ Wiki PageObjects].
@@ -119,13 +105,6 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v3.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise (fill out the table):
-
-  | Category                                |       |
-  | :-------------------------------------- | :---: |
-  | Time expenses for this exercise         | hh:mm |
-  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
-  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
 
 ## (4) Data-driven Tests _(2 Points)_
 
@@ -141,7 +120,7 @@ The implemented test cases contain test code and test data. In this exercise you
 
 1. First, check http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html on details about JUnit’s support for parameterized test cases.
 
-1. Create a parameterized JUnit `WidokParameterizedSearchTest.java` test to repeat the following scenario
+1. Create a parameterized JUnit `FHResearchParameterizedSearchTest.java` test to repeat the following scenario
    1. Search for a term (e.g. 'testing') and
    1. Check the number of found persons, research fields, publications, etc.
 
@@ -158,17 +137,10 @@ When you're done...
 - [x] push your changes to your upstream repository on GitHub.
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v4.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
-- [x] please assess this exercise (fill out the table):
-
-  | Category                                |       |
-  | :-------------------------------------- | :---: |
-  | Time expenses for this exercise         | hh:mm |
-  | Difficulty (1=:sunglasses:, 5=:scream:) |  1-5  |
-  | Fun (1=:heart_eyes:, 5=:tired_face:)    |  1-5  |
 
 [GitHub creating releases]: https://help.github.com/articles/creating-releases/
 [GitHub linking to releases]: https://help.github.com/articles/linking-to-releases/
-[Selenium IDE]: https://www.seleniumhq.org/docs/02_selenium_ide.jsp
+[Selenium IDE]: https://www.seleniumhq.org/selenium-ide/
 [Selenium IDE for Firefox]: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
 [Selenium IDE for Chrome]: https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd
 [Maven Project]: https://maven.apache.org/guides/getting-started/

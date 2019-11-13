@@ -1,0 +1,81 @@
+{
+  "id": "cd7b565f-69fd-48a8-998b-314301ac9d49",
+  "version": "2.0",
+  "name": "FH Research Test",
+  "url": "http://research.fh-ooe.at/de/index",
+  "tests": [{
+    "id": "1e316d9d-70a6-4a18-9626-a1665595b1fe",
+    "name": "ResearchGermanTest",
+    "commands": [{
+      "id": "d144a9b6-ee28-49a0-85ee-8ceb735082de",
+      "comment": "",
+      "command": "open",
+      "target": "https://research.fh-ooe.at/de/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0697e712-4039-400d-a595-6cdb0439afe9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchInput__input",
+      "targets": [
+        ["css=.searchInput__input", "css:finder"],
+        ["xpath=(//input[@name='q'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07a9e942-997b-4f89-8b35-5dd142cad1f9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.searchInput__input",
+      "targets": [
+        ["css=.searchInput__input", "css:finder"],
+        ["xpath=(//input[@name='q'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div/form/input", "xpath:position"]
+      ],
+      "value": "testing"
+    }, {
+      "id": "27b1fa51-c8d5-4a3a-b56d-be4ded6fba03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/form/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d44899c-b300-4b1e-a1d3-66eba06a8739",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.searchItem",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "6f8325e0-bc6b-4a8f-864c-f5583dac0c83",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.fullwidth__searchResult",
+      "targets": [
+        ["css=.fullwidth__searchResult", "css:finder"],
+        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": "160 Ergebnisse für testing"
+    }]
+  }],
+  "suites": [{
+    "id": "2cb14c2a-0350-42d2-98de-698dd0b1ea83",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://research.fh-ooe.at/", "http://research.fh-ooe.at/de/index"],
+  "plugins": []
+}
