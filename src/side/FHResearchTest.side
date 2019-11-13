@@ -7,65 +7,43 @@
     "id": "1e316d9d-70a6-4a18-9626-a1665595b1fe",
     "name": "ResearchGermanTest",
     "commands": [{
-      "id": "d144a9b6-ee28-49a0-85ee-8ceb735082de",
+      "id": "8a5d0af3-7212-49d2-a998-ad9e9a056356",
       "comment": "",
       "command": "open",
-      "target": "https://research.fh-ooe.at/de/index",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
-      "id": "0697e712-4039-400d-a595-6cdb0439afe9",
+      "id": "9129e57e-ecd7-4ca6-841c-bd4245703127",
       "comment": "",
-      "command": "click",
-      "target": "css=.searchInput__input",
-      "targets": [
-        ["css=.searchInput__input", "css:finder"],
-        ["xpath=(//input[@name='q'])[2]", "xpath:attributes"],
-        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/form/input", "xpath:idRelative"],
-        ["xpath=//div/form/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "07a9e942-997b-4f89-8b35-5dd142cad1f9",
-      "comment": "",
-      "command": "type",
-      "target": "css=.searchInput__input",
-      "targets": [
-        ["css=.searchInput__input", "css:finder"],
-        ["xpath=(//input[@name='q'])[2]", "xpath:attributes"],
-        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/form/input", "xpath:idRelative"],
-        ["xpath=//div/form/input", "xpath:position"]
-      ],
-      "value": "testing"
-    }, {
-      "id": "27b1fa51-c8d5-4a3a-b56d-be4ded6fba03",
-      "comment": "",
-      "command": "click",
-      "target": "css=.fa-search",
-      "targets": [
-        ["css=.fa-search", "css:finder"],
-        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/form/button/i", "xpath:idRelative"],
-        ["xpath=//button/i", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "4d44899c-b300-4b1e-a1d3-66eba06a8739",
-      "comment": "",
-      "command": "waitForElementPresent",
-      "target": "css=.searchItem",
+      "command": "assertTitle",
+      "target": "Research Documentation FH Oberösterreich",
       "targets": [],
-      "value": "30000"
+      "value": ""
     }, {
-      "id": "6f8325e0-bc6b-4a8f-864c-f5583dac0c83",
+      "id": "0a3f6bd0-e192-4d75-afdb-01df867bde5b",
       "comment": "",
       "command": "assertText",
-      "target": "css=.fullwidth__searchResult",
+      "target": "css=.heroPanel__title",
       "targets": [
-        ["css=.fullwidth__searchResult", "css:finder"],
-        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/div/div", "xpath:idRelative"],
-        ["xpath=//div/div/div/div", "xpath:position"]
+        ["css=.heroPanel__title", "css:finder"],
+        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Wissensdokumentation')]", "xpath:innerText"]
       ],
-      "value": "160 Ergebnisse für testing"
+      "value": "Wissensdokumentation"
+    }, {
+      "id": "ceed125f-1290-4927-964a-80bdabd18d8b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.heroPanel__description",
+      "targets": [
+        ["css=.heroPanel__description", "css:finder"],
+        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Durchsuchen Sie Wissensdokumentation der FH Oberösterreich nach Publikationen, Patenten, Personen und Projekten.')]", "xpath:innerText"]
+      ],
+      "value": "Durchsuchen Sie Wissensdokumentation der FH Oberösterreich nach Publikationen, Patenten, Personen und Projekten."
     }]
   }],
   "suites": [{

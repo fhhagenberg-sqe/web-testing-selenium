@@ -21,10 +21,11 @@ In this exercise you learn the basics of automated web testing via capture and r
    1. The first test case tests - similar to `ResearchGermanTest` - the english translation of the search page. Name it `ResearchEnglishTest`.
       _(Hint: The english version is available via https://research.fh-ooe.at/en/index.)_
 
-   1. The second test case performs a search for the keyword 'testing' and checks the number of publications found as well as the link-text of the first publication in the list. Name this test `WidokSearchTest`.
+   1. The second test case performs a search for the keyword 'testing' and checks the number of publications found as well as the link-text of the first publication in the list. Name this test `ResearchSearchTest`.
 
-      :interrobang: What problems do you encounter when running the recorded test? (See warning message in the logs)
+      :interrobang: What problems do you encounter when running the recorded test? (See error message in the logs)
       Fix them by manually modifying the recorded commands.
+      _Hint: Wait until elements matching css selector ".searchItem" are present._
 
 1. Run all tests and make sure they complete sucessfully.
 
@@ -60,7 +61,7 @@ The goal of this exercise is to learn how to write a simple system test for a we
    The required libraries _Unit_, _Selenium WebDriver_ (and two more) are already set up as Maven dependencies. So you do not have to download or install anything, your IDE will locate and download them for you.
    If you prefer to **not** use an IDE, you can use the Maven command line tool _mvn_ to compile and package your classes and execute your tests.
 
-1. Take the existing class [`at.fhhagenberg.sqe.fhresearch.FHResearchTest`](src/test/java/at/fhhagenberg/sqe/fhresearch/FHResearchTest.java) as starting point to write a system test with JUnit and Selenium WebDriver. Implement all of the _four tests of the previous exercise (1)_:
+1. Take the existing class [`at.fhhagenberg.sqe.fhresearch.FHResearchTest`](src/test/java/at/fhhagenberg/sqe/fhresearch/FHResearchTest.java) as starting point to write a system test with JUnit and Selenium WebDriver. Implement _all of the tests of the previous exercise (1)_:
 
    1. `testResearchGerman`: Ensure, the default search page is correctly translated to german.
    1. `testResearchEnglish`: Ensure, the english search page is correctly translated to english.
