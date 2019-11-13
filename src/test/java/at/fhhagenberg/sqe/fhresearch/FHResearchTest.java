@@ -4,10 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,27 +13,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.seljup.SeleniumExtension;
 
+@ExtendWith(SeleniumExtension.class)
 public class FHResearchTest {
-
-	private static Class<? extends WebDriver> driverClass = ChromeDriver.class;
 
 	private WebDriver driver;
 
-	@BeforeAll
-	public static void setupDriver() {
-		WebDriverManager.getInstance(driverClass).setup();
-	}
-
-	@BeforeEach
-	public void createDriver() throws Exception {
-		driver = driverClass.getDeclaredConstructor().newInstance();
-	}
-
-	@AfterEach
-	public void quitDriver() {
-		driver.quit();
+	public FHResearchTest(ChromeDriver driver) {
+		this.driver = driver;
 	}
 
 	@Test
