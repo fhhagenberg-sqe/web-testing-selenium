@@ -119,13 +119,13 @@ The implemented test cases contain test code and test data. In this exercise you
 
 ### Instructions
 
-1. First, check http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html on details about JUnit’s support for parameterized test cases.
+1. First, check https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests on details about JUnit’s support for parameterized test cases.
 
 1. Create a parameterized JUnit `FHResearchParameterizedSearchTest.java` test to repeat the following scenario
    1. Search for a term (e.g. 'testing') and
    1. Check the number of found persons, research fields, publications, etc.
 
-![Parameterized test items](widok-screenshot.png)
+![Parameterized test items](fhresearch-screenshot.png)
 
 Please, write your test case according to following instructions:
 * Create a parameterized test that uses the page objects written in the previous exercise (3).
