@@ -76,7 +76,7 @@ When you're done...
 - [x] on GitHub, [create a release][GitHub creating releases] with version `v2.0`.
 - [x] upload the [link to your release][GitHub linking to releases] on the e-learning platform until the specified date and time before the next lecture.
 
-## (3) Page Objects _(2 Points)_
+## (3) Page Objects _(3 Points)_
 
 In this exercise you learn how to extend automated testing of (Web-based) GUIs to increase the maintainability and flexibility of your test implementation.
 
@@ -114,7 +114,7 @@ The implemented test cases contain test code and test data. In this exercise you
 ### Prerequisites
 
 - [x] Completion of the previous exercise (3).
-- [x] Java 10 SDK. (Works also with other versions, but this requires slight modifications of [`pom.xml`](pom.xml).)
+- [x] Java 13 SDK. (Works also with other versions, but this might require slight modifications of [`pom.xml`](pom.xml).)
 - [x] Maven 3. (If you use an IDE like Eclipse or IntelliJ, Maven is **already included** :sunglasses:.)
 
 ### Instructions
@@ -130,6 +130,7 @@ The implemented test cases contain test code and test data. In this exercise you
 Please, write your test case according to following instructions:
 * Create a parameterized test that uses the page objects written in the previous exercise (3).
 * Provide a list of search terms (e.g., "embedded", "software", "testing") and expected result numbers (e.g. "47", "11", ...) as parameter set; the parameterized test iterates over this parameter set.
+* You can choose either the german (`/de/`) or english (`/en/`) page for this exercise.
 
 ### Submission
 
