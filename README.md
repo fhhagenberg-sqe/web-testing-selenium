@@ -1,6 +1,6 @@
 # Testing Web-Applications with Selenium
 
-In this assignment you learn how to build a maintainable test framework for testing web applications using JUnit and the [Selenium WebDriver][SeleniumHQ WebDriver]. Starting with a simple Selenium based test you will gradually improve the code to get a test system with abstraction layer, reusable functions and a separate test data pool.
+In this assignment you learn how to build a maintainable test framework for testing web applications using JUnit and the [Selenium WebDriver][Selenium WebDriver]. Starting with a simple Selenium based test you will gradually improve the code to get a test system with abstraction layer, reusable functions and a separate test data pool.
 
 ## (1) Capture & Replay with Selenium IDE _(1 Point)_
 
@@ -9,6 +9,7 @@ In this exercise you learn the basics of automated web testing via capture and r
 ### Prerequisites
 
 - [x] A current version of either Firefox or Chrome web browser.
+  _(Note: In our preparations we had some troubles running Selenium IDE on Firefox.)_
 
 ### Instructions
 
@@ -22,10 +23,6 @@ In this exercise you learn the basics of automated web testing via capture and r
       _(Hint: The english version is available via https://research.fh-ooe.at/en/index.)_
 
    1. The second test case performs a search for the keyword 'testing' and checks the number of publications found as well as the link-text of the first publication in the list. Name this test `ResearchSearchTest`.
-
-      :interrobang: What problems do you encounter when running the recorded test? (See error message in the logs)
-      Fix them by manually modifying the recorded commands.
-      _Hint: Wait until elements matching css selector ".searchItem" are present._
 
 1. Run all tests and make sure they complete sucessfully.
 
@@ -147,6 +144,6 @@ When you're done...
 [Selenium IDE for Chrome]: https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd
 [Maven Project]: https://maven.apache.org/guides/getting-started/
 [Page Objects in Selenium]: http://blog.activelylazy.co.uk/2011/07/09/page-objects-in-selenium-2-0/
-[SeleniumHQ WebDriver]: https://www.seleniumhq.org/projects/webdriver/
-[SeleniumHQ Wiki PageObjects]: https://github.com/SeleniumHQ/selenium/wiki/PageObjects
-[SeleniumHQ Wiki PageFactory]: https://github.com/SeleniumHQ/selenium/wiki/PageFactory
+[Selenium WebDriver]: https://www.selenium.dev/documentation/en/webdriver/
+[Selenium Wiki PageObjects]: https://github.com/SeleniumHQ/selenium/wiki/PageObjects
+[Selenium Wiki PageFactory]: https://github.com/SeleniumHQ/selenium/wiki/PageFactory
