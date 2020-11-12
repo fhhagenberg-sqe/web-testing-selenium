@@ -14,7 +14,7 @@
 		<junit.version>5.5.2</junit.version>
 
 		<selenium.version>3.141.59</selenium.version>
-		<selenium.jupiter.version>3.3.2</selenium.jupiter.version>
+		<selenium.jupiter.version>3.3.5</selenium.jupiter.version>
 		<logback.version>1.2.3</logback.version>
 	</properties>
 
