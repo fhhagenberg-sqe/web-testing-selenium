@@ -26,36 +26,33 @@ public class FHResearchTest {
 
 	@Test
 	public void testResearchGerman() {
-		driver.get("http://research.fh-ooe.at/de/index");
+		driver.get("https://pure.fh-ooe.at/de/publications/");
 
-		assertEquals("Research Documentation FH Oberösterreich", driver.getTitle());
+		assertEquals("Publikationen finden — FH Oberösterreich", driver.getTitle());
 
-		WebElement titleElem = driver.findElement(By.cssSelector(".heroPanel__title"));
-		WebElement descElem = driver.findElement(By.cssSelector(".heroPanel__description"));
+		WebElement titleElem = driver.findElement(By.cssSelector("#search-description"));
 
-		// TODO: assert text of title element to be "Wissensdokumentation"
-		// TODO: assert text of description element to be (=> see webpage)
+		// TODO: assert text of title element to be "Publikationen finden"
 
 		fail("TODO");
 	}
 
 	@Test
 	public void testSearch() {
-		driver.get("http://research.fh-ooe.at/");
+		driver.get("https://pure.fh-ooe.at/en/publications/");
 
-		// (1) TODO: find search box (css selector: ".searchInput__input") and insert
-		// text
-		// "testing" via key input.
+		// (1) TODO: find search box (css selector: "#global-search-input") and insert
+		// text "testing" via key input.
 
-		// (2) TODO: find and click search button (css selector: ".searchInput__submit")
+		// (2) TODO: find and click search button (css selector: "css=#normalSearch")
 
-		assertTrue(driver.getCurrentUrl().endsWith("q=testing"));
+		assertTrue(driver.getCurrentUrl().contains("originalSearch=testing"));
 
 		// (3) wait for search result list to appear
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".searchItem")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".list-results")));
 
-		// (4) TODO: assert number of search results ("160 Ergebnisse für testing")
+		// (4) TODO: assert number of search results ("1 - 50 out of 168 results")
 
 		fail("TODO");
 	}

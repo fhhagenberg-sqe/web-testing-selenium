@@ -2,48 +2,38 @@
   "id": "cd7b565f-69fd-48a8-998b-314301ac9d49",
   "version": "2.0",
   "name": "FH Research Test",
-  "url": "http://research.fh-ooe.at/de/index",
+  "url": "https://pure.fh-ooe.at/en/publications/",
   "tests": [{
     "id": "1e316d9d-70a6-4a18-9626-a1665595b1fe",
     "name": "ResearchGermanTest",
     "commands": [{
-      "id": "8a5d0af3-7212-49d2-a998-ad9e9a056356",
+      "id": "52242c7b-1004-4446-9021-3ea618c3e89a",
       "comment": "",
       "command": "open",
-      "target": "",
+      "target": "https://pure.fh-ooe.at/de/publications/",
       "targets": [],
       "value": ""
     }, {
-      "id": "9129e57e-ecd7-4ca6-841c-bd4245703127",
+      "id": "3a59d74c-99e2-4682-99f8-23f7ef8abdf7",
       "comment": "",
       "command": "assertTitle",
-      "target": "Research Documentation FH Oberösterreich",
+      "target": "Publikationen finden — FH Oberösterreich",
       "targets": [],
       "value": ""
     }, {
-      "id": "0a3f6bd0-e192-4d75-afdb-01df867bde5b",
+      "id": "31ed1e97-f066-498e-bbb8-78dbe7e49fc9",
       "comment": "",
       "command": "assertText",
-      "target": "css=.heroPanel__title",
+      "target": "id=search-description",
       "targets": [
-        ["css=.heroPanel__title", "css:finder"],
-        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/h1", "xpath:idRelative"],
+        ["id=search-description", "id"],
+        ["css=#search-description", "css:finder"],
+        ["xpath=//h1[@id='search-description']", "xpath:attributes"],
+        ["xpath=//main[@id='page-content']/div/div/div/section/div/h1", "xpath:idRelative"],
         ["xpath=//h1", "xpath:position"],
-        ["xpath=//h1[contains(.,'Wissensdokumentation')]", "xpath:innerText"]
+        ["xpath=//h1[contains(.,'Find Research outputs')]", "xpath:innerText"]
       ],
-      "value": "Wissensdokumentation"
-    }, {
-      "id": "ceed125f-1290-4927-964a-80bdabd18d8b",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.heroPanel__description",
-      "targets": [
-        ["css=.heroPanel__description", "css:finder"],
-        ["xpath=//div[@id='mm-0']/div[2]/main/div/div/p", "xpath:idRelative"],
-        ["xpath=//p", "xpath:position"],
-        ["xpath=//p[contains(.,'Durchsuchen Sie Wissensdokumentation der FH Oberösterreich nach Publikationen, Patenten, Personen und Projekten.')]", "xpath:innerText"]
-      ],
-      "value": "Durchsuchen Sie Wissensdokumentation der FH Oberösterreich nach Publikationen, Patenten, Personen und Projekten."
+      "value": "Publikationen finden"
     }]
   }],
   "suites": [{
@@ -54,6 +44,6 @@
     "timeout": 300,
     "tests": []
   }],
-  "urls": ["http://research.fh-ooe.at/", "http://research.fh-ooe.at/de/index"],
+  "urls": ["http://research.fh-ooe.at/", "http://research.fh-ooe.at/de/index", "https://pure.fh-ooe.at/en/publications/"],
   "plugins": []
 }

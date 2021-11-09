@@ -16,11 +16,11 @@ In this exercise you learn the basics of automated web testing via capture and r
 1. Install Selenium IDE as extension to your browser (install either [Selenium IDE for Firefox][] or [Selenium IDE for Chrome][]).
 1. Load the Selenium IDE project [`src/side/FHResearchTest.side`](src/side/FHResearchTest.side) into your Selenium IDE.
 
-   This project contains a test case that perform checks on the _University of Applied Science's Research Documentation web page_ located at http://research.fh-ooe.at.
+   This project contains a test case that perform checks on the _University of Applied Science's Research Publication web page_ located at https://pure.fh-ooe.at/de/publications/.
 
 1. Add **two** additional test cases by using the 'record' function of Selenium IDE:
    1. The first test case tests - similar to `ResearchGermanTest` - the english translation of the search page. Name it `ResearchEnglishTest`.
-      _(Hint: The english version is available via https://research.fh-ooe.at/en/index.)_
+      _(Hint: The english version is available via https://pure.fh-ooe.at/en/publications/.)_
 
    1. The second test case performs a search for the keyword 'testing' and checks the number of publications found as well as the link-text of the first publication in the list. Name this test `ResearchSearchTest`.
 
@@ -120,7 +120,7 @@ The implemented test cases contain test code and test data. In this exercise you
 
 1. Create a parameterized JUnit `FHResearchParameterizedSearchTest.java` test to repeat the following scenario
    1. Search for a term (e.g. 'testing') and
-   1. Check the number of found persons, research fields, publications, etc.
+   1. Check the number of found results, first title, types, publication years, etc.
 
 ![Parameterized test items](fhresearch-screenshot.png)
 
